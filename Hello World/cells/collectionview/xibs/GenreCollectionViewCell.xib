@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenreCollectionViewCell" customModule="Hello_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="221" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="221" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhx-Z4-hXp">
+                        <rect key="frame" x="0.0" y="0.0" width="221" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-GO-PAA">
+                                <rect key="frame" x="0.0" y="46" width="221" height="4"/>
+                                <color key="backgroundColor" name="color_accent"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="K7e-0V-4gf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cLh-yM-AK1">
+                                <rect key="frame" x="0.0" y="0.0" width="221" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="color_primary"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cLh-yM-AK1" secondAttribute="trailing" id="1hZ-bv-G5c"/>
+                            <constraint firstItem="hiF-GO-PAA" firstAttribute="top" secondItem="cLh-yM-AK1" secondAttribute="bottom" id="AVe-2t-tZA"/>
+                            <constraint firstItem="cLh-yM-AK1" firstAttribute="leading" secondItem="bhx-Z4-hXp" secondAttribute="leading" id="ERU-xM-WWk"/>
+                            <constraint firstAttribute="height" constant="50" id="Hf6-hq-RwB"/>
+                            <constraint firstItem="hiF-GO-PAA" firstAttribute="leading" secondItem="bhx-Z4-hXp" secondAttribute="leading" id="XWJ-IW-Ltx"/>
+                            <constraint firstItem="cLh-yM-AK1" firstAttribute="top" secondItem="bhx-Z4-hXp" secondAttribute="top" id="o6C-By-yoX"/>
+                            <constraint firstAttribute="trailing" secondItem="hiF-GO-PAA" secondAttribute="trailing" id="oZp-WF-ibG"/>
+                            <constraint firstAttribute="bottom" secondItem="hiF-GO-PAA" secondAttribute="bottom" id="v1Y-lY-cgV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bhx-Z4-hXp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="17j-ik-LfC"/>
+                <constraint firstAttribute="bottom" secondItem="bhx-Z4-hXp" secondAttribute="bottom" id="fv2-Ym-85p"/>
+                <constraint firstItem="bhx-Z4-hXp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mEc-3r-yL3"/>
+                <constraint firstAttribute="trailing" secondItem="bhx-Z4-hXp" secondAttribute="trailing" id="uk8-Hr-DQF"/>
+            </constraints>
+            <size key="customSize" width="221" height="58"/>
+            <connections>
+                <outlet property="lblGenre" destination="cLh-yM-AK1" id="B4y-DZ-w1C"/>
+                <outlet property="viewContainer" destination="bhx-Z4-hXp" id="b3b-Bg-LmY"/>
+                <outlet property="viewTabIndicator" destination="hiF-GO-PAA" id="wEf-sA-abN"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="106.47321428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_accent">
+            <color red="0.91600000858306885" green="0.74500000476837158" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color_primary">
+            <color red="0.086999997496604919" green="0.10899999737739563" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

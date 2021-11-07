@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="227" id="KGk-i7-Jjw" customClass="BestActorsTableViewCell" customModule="Hello_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="227"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="227"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEST ACTORS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-Pw-e5Z">
+                        <rect key="frame" x="16" y="16" width="116.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MORE ACTORS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVm-OS-khk">
+                        <rect key="frame" x="285.5" y="16" width="88.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="0.0"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PSJ-Re-Cg8">
+                        <rect key="frame" x="0.0" y="52.5" width="390" height="200"/>
+                        <color key="backgroundColor" name="color_primary"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="0Qh-9a-VE2"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="15" id="2b3-uM-Ryk">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" name="color_primary"/>
+                <constraints>
+                    <constraint firstItem="OW7-Pw-e5Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="6KL-D2-4xa"/>
+                    <constraint firstAttribute="bottom" secondItem="PSJ-Re-Cg8" secondAttribute="bottom" id="7SE-qZ-kdH"/>
+                    <constraint firstItem="PSJ-Re-Cg8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BYb-gN-TGe"/>
+                    <constraint firstItem="OW7-Pw-e5Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="RkX-mY-fJF"/>
+                    <constraint firstItem="kVm-OS-khk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="TK6-8u-DZQ"/>
+                    <constraint firstAttribute="trailing" secondItem="PSJ-Re-Cg8" secondAttribute="trailing" id="XTC-6Y-UMq"/>
+                    <constraint firstAttribute="trailing" secondItem="kVm-OS-khk" secondAttribute="trailing" constant="16" id="evv-Ev-TKU"/>
+                    <constraint firstItem="PSJ-Re-Cg8" firstAttribute="top" secondItem="OW7-Pw-e5Z" secondAttribute="bottom" constant="16" id="nEZ-gD-aOj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionViewBestActors" destination="PSJ-Re-Cg8" id="JBX-k7-kJd"/>
+                <outlet property="lblMoreActors" destination="kVm-OS-khk" id="w9F-Cb-HTy"/>
+            </connections>
+            <point key="canvasLocation" x="88.405797101449281" y="169.75446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_primary">
+            <color red="0.086999997496604919" green="0.10899999737739563" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

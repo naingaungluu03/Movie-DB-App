@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieSliderCollectionViewCell" customModule="Hello_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="259" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wolverine" translatesAutoresizingMaskIntoConstraints="NO" id="jI7-9G-0K8">
+                        <rect key="frame" x="0.0" y="0.0" width="259" height="155"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R4A-Sh-xO6">
+                        <rect key="frame" x="104.5" y="53" width="50" height="49"/>
+                        <color key="tintColor" name="color_accent"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Fja-vM-d6O"/>
+                            <constraint firstAttribute="width" constant="50" id="s9P-Hn-TIc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Wolverine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGG-jm-Whx">
+                        <rect key="frame" x="16" y="118" width="116" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="jI7-9G-0K8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="034-Ta-FAA"/>
+                <constraint firstAttribute="bottom" secondItem="nGG-jm-Whx" secondAttribute="bottom" constant="16" id="4dp-FM-aYx"/>
+                <constraint firstItem="jI7-9G-0K8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5Dx-UB-yKt"/>
+                <constraint firstItem="nGG-jm-Whx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="90s-ch-baF"/>
+                <constraint firstItem="R4A-Sh-xO6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Afh-5Y-wql"/>
+                <constraint firstAttribute="bottom" secondItem="jI7-9G-0K8" secondAttribute="bottom" id="Qet-Ip-keP"/>
+                <constraint firstAttribute="trailing" secondItem="jI7-9G-0K8" secondAttribute="trailing" id="YFV-rS-yk6"/>
+                <constraint firstItem="R4A-Sh-xO6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="uRE-LN-tBR"/>
+            </constraints>
+            <size key="customSize" width="259" height="155"/>
+            <connections>
+                <outlet property="imgBackdrop" destination="jI7-9G-0K8" id="cZ6-fD-cdi"/>
+                <outlet property="lableMovieTitle" destination="nGG-jm-Whx" id="ioK-Ut-S8E"/>
+            </connections>
+            <point key="canvasLocation" x="283.33333333333337" y="117.52232142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle.fill" catalog="system" width="32" height="32"/>
+        <image name="wolverine" width="324.66665649414062" height="463.33334350585938"/>
+        <namedColor name="color_accent">
+            <color red="0.91600000858306885" green="0.74500000476837158" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

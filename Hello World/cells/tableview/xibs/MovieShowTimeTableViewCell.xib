@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="KGk-i7-Jjw" customClass="MovieShowTimeTableViewCell" customModule="Hello_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYY-sI-tZa">
+                        <rect key="frame" x="10" y="24" width="309" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Movie Showtimes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLr-ru-MfF">
+                                <rect key="frame" x="24" y="24" width="154.5" height="49.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEE MORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMM-8Y-hXq">
+                                <rect key="frame" x="24" y="89" width="64" height="15"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="12"/>
+                                <color key="textColor" name="color_accent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_location" translatesAutoresizingMaskIntoConstraints="NO" id="nKP-Fb-AqY">
+                                <rect key="frame" x="243" y="35" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3ML-NQ-Nyy"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ozi-lj-ZKb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="nKP-Fb-AqY" firstAttribute="centerY" secondItem="IYY-sI-tZa" secondAttribute="centerY" id="46B-Rh-T7S"/>
+                            <constraint firstItem="bLr-ru-MfF" firstAttribute="top" secondItem="IYY-sI-tZa" secondAttribute="top" constant="24" id="ANp-hz-yKM"/>
+                            <constraint firstAttribute="height" constant="120" id="JB5-Cn-qSx"/>
+                            <constraint firstItem="bLr-ru-MfF" firstAttribute="leading" secondItem="IYY-sI-tZa" secondAttribute="leading" constant="24" id="NvT-Re-YTh"/>
+                            <constraint firstItem="hMM-8Y-hXq" firstAttribute="leading" secondItem="IYY-sI-tZa" secondAttribute="leading" constant="24" id="PA5-aB-2Z3"/>
+                            <constraint firstItem="bLr-ru-MfF" firstAttribute="width" secondItem="IYY-sI-tZa" secondAttribute="width" multiplier="0.5" id="bFc-f3-tLR"/>
+                            <constraint firstAttribute="bottom" secondItem="hMM-8Y-hXq" secondAttribute="bottom" constant="16" id="dYG-ka-YMy"/>
+                            <constraint firstAttribute="trailing" secondItem="nKP-Fb-AqY" secondAttribute="trailing" constant="16" id="m5b-gY-srH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="color_primary"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IYY-sI-tZa" secondAttribute="trailing" constant="10" id="CBi-Do-FoG"/>
+                    <constraint firstItem="IYY-sI-tZa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Eva-5U-zPS"/>
+                    <constraint firstAttribute="bottom" secondItem="IYY-sI-tZa" secondAttribute="bottom" constant="10" id="fAY-mc-uAL"/>
+                    <constraint firstItem="IYY-sI-tZa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="qYO-gs-hv8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblSeeMore" destination="hMM-8Y-hXq" id="b0Q-34-QbO"/>
+                <outlet property="viewBackground" destination="IYY-sI-tZa" id="ap4-Ea-lSQ"/>
+            </connections>
+            <point key="canvasLocation" x="19.565217391304348" y="107.8125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_location" width="32" height="32"/>
+        <namedColor name="Color">
+            <color red="0.12200000137090683" green="0.14499999582767487" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_accent">
+            <color red="0.91600000858306885" green="0.74500000476837158" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color_primary">
+            <color red="0.086999997496604919" green="0.10899999737739563" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

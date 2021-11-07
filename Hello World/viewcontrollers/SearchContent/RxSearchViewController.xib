@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RxSearchViewController" customModule="Hello_World" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionViewSearchResult" destination="1Ht-Vq-yBp" id="LgX-rI-xgZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NT-Va-h25">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1Ht-Vq-yBp">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" name="color_primary"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YQG-VL-oOT">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="1Ht-Vq-yBp" firstAttribute="leading" secondItem="9NT-Va-h25" secondAttribute="leading" id="2d9-ME-sJU"/>
+                        <constraint firstAttribute="bottom" secondItem="1Ht-Vq-yBp" secondAttribute="bottom" id="OFM-Vf-BAy"/>
+                        <constraint firstItem="1Ht-Vq-yBp" firstAttribute="top" secondItem="9NT-Va-h25" secondAttribute="top" id="Qta-oZ-DkR"/>
+                        <constraint firstAttribute="trailing" secondItem="1Ht-Vq-yBp" secondAttribute="trailing" id="UIA-Z9-ra5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9NT-Va-h25" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4c6-Yl-fKM"/>
+                <constraint firstAttribute="bottom" secondItem="9NT-Va-h25" secondAttribute="bottom" id="Lod-Ak-ZAk"/>
+                <constraint firstItem="9NT-Va-h25" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Q36-WI-pNI"/>
+                <constraint firstItem="9NT-Va-h25" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="icO-m6-MNl"/>
+            </constraints>
+            <point key="canvasLocation" x="-13" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="color_primary">
+            <color red="0.086999997496604919" green="0.10899999737739563" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

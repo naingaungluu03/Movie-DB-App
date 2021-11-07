@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BestActorsCollectionViewCell" customModule="Hello_World" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="211"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTY-cn-z3S">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="211"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dwayne_johnson" translatesAutoresizingMaskIntoConstraints="NO" id="rYz-4n-PTU">
+                                <rect key="frame" x="0.0" y="0.0" width="154" height="211"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nzu-os-Cyf" userLabel="ivHeartFill">
+                                <rect key="frame" x="120" y="11.5" width="24" height="21.5"/>
+                                <color key="tintColor" name="color_accent"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="FvF-Ek-s0n"/>
+                                    <constraint firstAttribute="width" constant="24" id="llL-eI-JMQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="al9-zg-rgR" userLabel="ivHeart">
+                                <rect key="frame" x="120" y="11.5" width="24" height="21.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="04w-q7-YLt">
+                                <rect key="frame" x="10" y="184.5" width="16" height="16"/>
+                                <color key="tintColor" name="color_accent"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Fzx-QI-WdZ"/>
+                                    <constraint firstAttribute="width" constant="16" id="lhu-fy-vKO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You liked 18 movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-sb-EK1">
+                                <rect key="frame" x="30" y="185" width="114" height="16"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dwayne Johnson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xb9-yj-Zhi">
+                                <rect key="frame" x="10" y="165" width="144" height="20"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="al9-zg-rgR" firstAttribute="trailing" secondItem="nzu-os-Cyf" secondAttribute="trailing" id="Cex-TZ-fFK"/>
+                            <constraint firstItem="jaH-sb-EK1" firstAttribute="leading" secondItem="04w-q7-YLt" secondAttribute="trailing" constant="4" id="DU7-Zq-GFQ"/>
+                            <constraint firstItem="nzu-os-Cyf" firstAttribute="top" secondItem="MTY-cn-z3S" secondAttribute="top" constant="10" id="EPh-Uc-Pgu"/>
+                            <constraint firstItem="04w-q7-YLt" firstAttribute="leading" secondItem="MTY-cn-z3S" secondAttribute="leading" constant="10" id="FIf-tp-Pxt"/>
+                            <constraint firstItem="rYz-4n-PTU" firstAttribute="leading" secondItem="MTY-cn-z3S" secondAttribute="leading" id="JrW-Ir-TA5"/>
+                            <constraint firstAttribute="bottom" secondItem="04w-q7-YLt" secondAttribute="bottom" constant="10" id="TMo-4y-WjS"/>
+                            <constraint firstItem="Xb9-yj-Zhi" firstAttribute="leading" secondItem="04w-q7-YLt" secondAttribute="leading" id="TfA-g8-bHg"/>
+                            <constraint firstItem="al9-zg-rgR" firstAttribute="bottom" secondItem="nzu-os-Cyf" secondAttribute="bottom" id="Tzy-vG-Sef"/>
+                            <constraint firstItem="Xb9-yj-Zhi" firstAttribute="bottom" secondItem="04w-q7-YLt" secondAttribute="top" id="USk-H4-0EB"/>
+                            <constraint firstItem="jaH-sb-EK1" firstAttribute="trailing" secondItem="Xb9-yj-Zhi" secondAttribute="trailing" constant="-10" id="WRz-o1-cqA"/>
+                            <constraint firstAttribute="trailing" secondItem="jaH-sb-EK1" secondAttribute="trailing" constant="10" id="baV-Jg-0pz"/>
+                            <constraint firstItem="jaH-sb-EK1" firstAttribute="top" secondItem="04w-q7-YLt" secondAttribute="top" id="c5C-Ac-mtk"/>
+                            <constraint firstAttribute="bottom" secondItem="rYz-4n-PTU" secondAttribute="bottom" id="h0F-rg-DHb"/>
+                            <constraint firstItem="rYz-4n-PTU" firstAttribute="top" secondItem="MTY-cn-z3S" secondAttribute="top" id="iVn-Mi-PZr"/>
+                            <constraint firstItem="Xb9-yj-Zhi" firstAttribute="leading" secondItem="04w-q7-YLt" secondAttribute="leading" id="mNY-Wq-y3o"/>
+                            <constraint firstItem="04w-q7-YLt" firstAttribute="bottom" secondItem="jaH-sb-EK1" secondAttribute="bottom" id="oLW-gv-Og0"/>
+                            <constraint firstItem="al9-zg-rgR" firstAttribute="leading" secondItem="nzu-os-Cyf" secondAttribute="leading" id="owF-cF-nyk"/>
+                            <constraint firstItem="al9-zg-rgR" firstAttribute="top" secondItem="nzu-os-Cyf" secondAttribute="top" id="sy2-Ln-HUA"/>
+                            <constraint firstAttribute="trailing" secondItem="nzu-os-Cyf" secondAttribute="trailing" constant="10" id="vKJ-LH-WHb"/>
+                            <constraint firstAttribute="trailing" secondItem="rYz-4n-PTU" secondAttribute="trailing" id="we3-KE-WWy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="Color"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MTY-cn-z3S" secondAttribute="bottom" id="2Nx-Du-An8"/>
+                <constraint firstItem="MTY-cn-z3S" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DXI-RT-w9l"/>
+                <constraint firstItem="MTY-cn-z3S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EnQ-0h-Bbn"/>
+                <constraint firstAttribute="trailing" secondItem="MTY-cn-z3S" secondAttribute="trailing" id="HZS-KV-hYE"/>
+            </constraints>
+            <size key="customSize" width="154" height="211"/>
+            <connections>
+                <outlet property="ivActorProfile" destination="rYz-4n-PTU" id="ARx-Sr-F0g"/>
+                <outlet property="ivHeart" destination="al9-zg-rgR" id="HOh-Yw-gwR"/>
+                <outlet property="ivHeartFill" destination="nzu-os-Cyf" id="Ffu-Pj-yuk"/>
+                <outlet property="lblActorName" destination="Xb9-yj-Zhi" id="xmX-aZ-Y7A"/>
+                <outlet property="lblKnownFor" destination="jaH-sb-EK1" id="9HK-0S-YNX"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="96.763392857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dwayne_johnson" width="400" height="400"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="32" height="32"/>
+        <image name="heart" catalog="system" width="32" height="32"/>
+        <image name="heart.fill" catalog="system" width="32" height="32"/>
+        <namedColor name="Color">
+            <color red="0.12200000137090683" green="0.14499999582767487" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_accent">
+            <color red="0.91600000858306885" green="0.74500000476837158" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

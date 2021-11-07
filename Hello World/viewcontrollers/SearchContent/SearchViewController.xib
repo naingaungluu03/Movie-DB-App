@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RxSearchController" customModule="Hello_World" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionViewSearchResult" destination="xmv-UA-dgB" id="Nob-4o-57A"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8N-H2-3jG">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xmv-UA-dgB">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" name="color_primary"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ilv-1N-gPt">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="xmv-UA-dgB" firstAttribute="top" secondItem="d8N-H2-3jG" secondAttribute="top" id="nA8-ts-cBZ"/>
+                        <constraint firstAttribute="trailing" secondItem="xmv-UA-dgB" secondAttribute="trailing" id="obV-23-Er4"/>
+                        <constraint firstItem="xmv-UA-dgB" firstAttribute="leading" secondItem="d8N-H2-3jG" secondAttribute="leading" id="rUl-Fm-dEt"/>
+                        <constraint firstAttribute="bottom" secondItem="xmv-UA-dgB" secondAttribute="bottom" id="u9p-Ah-7Da"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d8N-H2-3jG" secondAttribute="trailing" id="Mqk-KN-sdx"/>
+                <constraint firstAttribute="bottom" secondItem="d8N-H2-3jG" secondAttribute="bottom" id="SxY-xb-7OE"/>
+                <constraint firstItem="d8N-H2-3jG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="u4c-y8-CX1"/>
+                <constraint firstItem="d8N-H2-3jG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vhu-wO-0dX"/>
+            </constraints>
+            <point key="canvasLocation" x="-13" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="color_primary">
+            <color red="0.086999997496604919" green="0.10899999737739563" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
